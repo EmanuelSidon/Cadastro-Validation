@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="register.css">
+
+  <title>Sign Up - Register</title>
+</head>
+
+<body>
+  <div class="container form-group">
+    <fieldset>
+        <legend class="legend"><h2>Cadastro De Clientes</h2></legend>
+        <div class="forms">
+            <input type="text" name="nome" id="nome" class="user" required>
+            <label class="userLabel" for="nome">Nome Completo</label>
+        </div>
+        <div class="forms">
+            <input type="text" name="email" id="email" class="user" required>
+            <label class="userLabel" for="email">Email</label>
+        </div>
+        <div class="forms">
+          <input type="tel" name="Telefone" id="tel" class="user" required>
+          <label class="userLabel" for="nome">Telefone</label>
+      </div>
+        <div class="genero">
+          <h3>Genero:</h3>
+          <input type="radio" name="genero" id="genero" value="masculino"  required>
+          <label for="masculino">Masculino</label>
+          <input type="radio" name="genero" id="genero" value="feminino" required>
+          <label for="feminino">Feminino</label>
+          <input type="radio" name="genero" id="genero" value="outro" required>
+          <label for="outro">Outro</label>
+        </div>
+        <label class="userLabel" for="dataNascimento"><strong>Data De Nascimento</strong></label>
+        <input type="date" name="dataNascimento" id="nascimento" class="user" required>
+        <button id="submit" class="btn">Enviar</button>
+    </fieldset>  
+</div>
+</body>
+
+</html>

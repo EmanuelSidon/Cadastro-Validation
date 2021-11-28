@@ -1,0 +1,164 @@
+/* Reset CSS */
+
+* {
+  border: none;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: 'Inter', sans-serif;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background: #e6e2e2e5;
+}
+
+.vector {
+  position: fixed;
+  height: 100%;
+  margin: 0;
+  z-index: -1;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 2rem;
+  width: 100%;
+  height: 100vh;
+}
+
+.illustration {
+  width: 100%;
+  max-width: 20rem;
+}
+
+.illustration .avatar {
+  width: 18rem;
+}
+
+.login {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.perfil {
+  width: 100%;
+  max-width: 10rem;
+  margin: 1rem 10rem;
+}
+
+form {
+  width: 100%;
+  max-width: 47.1rem;
+}
+
+form h1 {
+  font-size: 2.9rem;
+  text-transform: uppercase;
+  margin: 1.8rem 0;
+  color: #000000bd;
+}
+
+form h5 {
+  color: #524c4cd8;
+}
+
+.selection {
+  display: flex;
+  align-items: center;
+  margin: 2.9rem 0;
+  padding: 0.5rem 0;
+  border-bottom: 0.3rem solid #90BFD4;
+}
+
+.selection.one {
+  margin-top: 0;
+}
+
+.selection.two {
+  margin-bottom: 0.9rem;
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2.4rem;
+}
+
+.selection > div {
+  position: relative;
+  height: 4rem;
+}
+
+.selection > div h6 {
+  position: absolute;
+  left: 1.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #524C4C;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.7rem;
+  letter-spacing: 0.1rem;
+  transition: .5s;
+}
+
+.input {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border: none;
+  outline: none;
+  background: none;
+  padding: 0.5rem 0.7rem;
+  font-size: 1.3rem;
+}
+
+.for {
+  display: block;
+  text-align: right;
+  text-decoration: none;
+  color: #524C4C;
+  font-size: 1.2rem;
+}
+
+.for:hover {
+  color: #0CAFF8;
+  transition: .4s;
+}
+
+.btn {
+  display: block;
+  width: 100%;
+  height: 50px;
+  border-radius: 20px;
+  margin: 3rem 0;
+  font-size: 1.3rem;
+  background: #90BFD4;
+  cursor: pointer;
+}
+
+.btn a {
+  color: #fff;
+}
+
+.btn:hover {
+  background: #0CAFF8;
+  transition: .4s;
+}
