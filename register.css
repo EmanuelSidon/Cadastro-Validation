@@ -95,6 +95,16 @@ fieldset {
   outline: none;
 }
 
+.idade  {
+  margin-top: 1.8rem;
+  display: inline-block;
+}
+
+.idade label {
+  cursor: pointer;
+  margin: 0.5rem 0.5rem;
+}
+
 #submit {
   background-image: linear-gradient( to right, #0CAFF8, #91dcffb0);
   cursor: pointer;
