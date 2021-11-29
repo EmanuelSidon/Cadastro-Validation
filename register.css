@@ -13,7 +13,7 @@ html {
 }
 
 body {
-  background-image: linear-gradient(to right, #e6e2e2e5, #e6e2e2e5) ;
+  background-image: linear-gradient(to right, #e6e2e2e5, #d3d0d07c) ;
 }
 
 .container {
@@ -28,6 +28,7 @@ body {
 fieldset {
   padding: 1rem;
   border: 0.3rem solid #90BFD4;
+  border-radius: 2.5rem;
 }
 
 .legend {

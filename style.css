@@ -102,10 +102,10 @@ form h5 {
 
 .selection > div {
   position: relative;
-  height: 4rem;
+  margin-top: 1rem;
 }
 
-.selection > div h6 {
+.selection > div label {
   position: absolute;
   left: 1.5rem;
   top: 50%;
@@ -118,15 +118,27 @@ form h5 {
 }
 
 .input {
-  position: absolute;
+  position: relative;
   width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
+  background: none;
   border: none;
   outline: none;
-  background: none;
-  padding: 0.5rem 0.7rem;
+  padding: 1.4rem 2rem;
+  font-size: 1.4rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
+
+.label-input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  transition: .5s;
+}
+
+.input:focus ~.label-input, .input:valid ~ .label-input  {
+  top: -0.9rem;
   font-size: 1.3rem;
 }
 
