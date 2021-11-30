@@ -17,6 +17,7 @@
 
 <body>
   <div class="container form-group">
+    <form>
     <fieldset>
       <legend class="legend"><h2>Cadastro De Clientes</h2></legend>
 
@@ -26,7 +27,7 @@
       </div>
 
       <div class="forms">
-        <input type="text" name="email" id="email" class="user" required>
+        <input type="email" name="email" id="email" class="user" required>
         <label class="userLabel" for="email">Email</label>
       </div>
 
@@ -50,15 +51,54 @@
       <input type="date" name="dataNascimento" id="nascimento" class="user" required>
 
       <div class="idade">
-        <h3>Idade:</h3>
+        <h3>Você tem mais de 18 anos?</h3>
         <input type="radio" name="idade" id="idade" value="maior"  required>
-        <label for="maior">+ 18</label>
+        <label for="maior">Sim</label>
         <input type="radio" name="idade" id="idade" value="menor" required>
-        <label for="menor"> - 18</label>
+        <label for="menor">Não</label>
       </div>
-      <button id="submit" class="btn">Enviar</button>
-    </fieldset>  
-  </div>
+
+      <div class="preferencias">
+        <label for="interesse" class="interesse">No que você mais se interessa na sua cidade?
+        </label>
+        <select id="interesse">
+            <option disabled selected>Selecione um interesse:</option>
+                <option value="Cinema">Cinema</option>
+                <option value="Parques Naturais e/ou Praias">Parques Naturais e/ou Praias</option>
+                <option value="Baladas">Baladas</option>
+                <option value="Restaurantes">Restaurantes</option>
+        </select>
+      </div>
+
+      <div class="interesse_cidade">
+          <label for="interesse" class="cidade">O que você pretende fazer na cidade?
+          </label>
+      </div><br>
+
+
+      <div class="form-interesse-cidade">
+          <input type="checkbox" name="interesse" id="turismo" value="turismo">
+          <label for="turismo">Turismo</label>
+      </div>
+
+      <div class="form-interesse-cidade">
+          <input type="checkbox" name="interesse" id="estudar" value="estudar">
+          <label for="estudar">Estudar</label>
+      </div>
+
+      <div class="form-interesse-cidade">
+          <input type="checkbox" name="interesse" id="residir" value="residir">
+          <label for="residir">Residir</label>
+    </div>
+
+    <div>
+      <button type="submit" id="submit" class="btn btn-primary">Gravar</button>
+    </div>
+
+    <div>
+      <button type="reset" id="reset" class="btn btn-primary">Limpar Dados</button>
+    </div>
+
 </body>
 
 </html>

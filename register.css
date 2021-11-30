@@ -30,6 +30,12 @@ fieldset {
   border: 0.3rem solid #90BFD4;
   border-radius: 2.5rem;
 }
+input {
+  transition: transform 0.7s;
+}
+input:hover {
+  transform: scale(1.02);
+}
 
 .legend {
   border: 0.2rem solid #90BFD4;
@@ -116,8 +122,36 @@ fieldset {
   color: #000000c5;
 }
 
+#reset {
+  background-image: linear-gradient( to left, #ff0000, #fa8383b0);
+  cursor: pointer;
+  width: 100%;
+  padding: 2rem;
+  margin-top: 1.5rem;
+  border-radius: 8rem;
+  font-weight: 600;
+  color: #000000c5;
+}
+
 #submit:hover {
   background: #62b3e9;
   transition: .4s;
+} 
+
+.preferencias  {
+  margin-top: 1.8rem;
+  display: inline-block;
 }
 
+.preferencias select {
+  cursor: pointer;
+  margin-top: 1rem;
+}
+.interesse_cidade {
+  margin-top: 1.8rem;
+  display: inline-block;
+}
+.form-interesse-cidade {
+  cursor: pointer;
+  margin-top: 1rem;
+}
